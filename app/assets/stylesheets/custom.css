@@ -1,7 +1,15 @@
 .img_header{
 	background-color: black; 
 	text-align: center;
-	padding-top: 50px;
+	padding-top: 80px;
 	width: 100%;
 	height: auto;
+}
+
+#mainNav .nav-link{
+	color: white;
+}
+
+#mainNav .navbar-brand{
+	color: white;
 }
