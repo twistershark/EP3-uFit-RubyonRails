@@ -11,6 +11,8 @@ require("channels")
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
+//= require grayscale
+//= require grayscale.min
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
