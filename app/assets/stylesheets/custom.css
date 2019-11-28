@@ -11,3 +11,11 @@
 #mainNav .navbar-brand{
 	color: white;
 }
+
+#mainNav .navbar-shrink{
+	background-color: red;
+}
+
+.navbar-expand-lg .navbar-light .fixed-top .navbar-shrink{
+	background-color:red;
+}
