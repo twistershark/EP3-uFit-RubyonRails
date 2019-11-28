@@ -31,14 +31,13 @@
           <li class="nav-item">
              <a class="nav-link js-scroll-trigger" href="#exercises">Exercícios</a>
           </li>
-
+          <% if user_signed_in? %>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#">Plano Pessoal</a>
           </li>
-
+          <% end %>
           <li class="navbar-text float-right nav-link js-scroll-trigger">
           <% if user_signed_in? %>
-            Logged in as <strong><%= current_user.email %></strong>.
             <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
             <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
           <% else %>
@@ -50,12 +49,6 @@
         </ul>
       </div>
     </div>
-    <% if notice %>
-        <p class="alert alert-success"><%= notice %></p>
-      <% end %>
-      <% if alert %>
-        <p class="alert alert-danger"><%= alert %></p>
-      <% end %>
     </nav>
  </div>
   <%= yield %>
