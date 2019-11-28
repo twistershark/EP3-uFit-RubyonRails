@@ -7,12 +7,12 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+require("packs/grayscale")
+require("packs/grayscale.min")
 
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
-//= require grayscale
-//= require grayscale.min
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
