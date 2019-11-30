@@ -12,10 +12,14 @@
 	color: white;
 }
 
-#mainNav .navbar-shrink{
+.new_user{
 	background-color: red;
+	text-align:center;
+	padding-top:200px;
+	padding-bottom:200px;
 }
 
-.navbar-expand-lg .navbar-light .fixed-top .navbar-shrink{
-	background-color:red;
+.container-fluid{
+	background-color: black;
+	height: 0px;
 }
