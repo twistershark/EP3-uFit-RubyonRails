@@ -1,0 +1,26 @@
+<div class="text-center">
+	<br><br>
+	<h2>Adicionar novo exercício</h2>
+	<br>
+<%= form_with scope: :exercise, local: true do |form| %>
+  <p>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </p>
+ 
+  <p>
+    <%= form.label :url %><br>
+    <%= form.text_field :url %>
+  </p>
+ 
+  <p>
+    <%= form.label :category %><br>
+    <%= form.text_field :category %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+    <br><br>
+  </p>
+<% end %>
+</div>
