@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
     resources :exercises
 
-    post "exercises/create"
+    
 
   root to: 'pages#home'
   devise_for :users
