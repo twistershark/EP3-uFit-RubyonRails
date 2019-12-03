@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get 'favorites/update'
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
     resources :exercises
 

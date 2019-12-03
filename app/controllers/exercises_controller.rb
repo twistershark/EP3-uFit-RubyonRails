@@ -1,4 +1,6 @@
 class ExercisesController < ApplicationController
+
+
   def index
     @exercises = Exercise.all
   end
@@ -15,6 +17,7 @@ class ExercisesController < ApplicationController
 
   def show
     @exercise = Exercise.find(params[:id])
+    @favorite_exists = Favorite.where(exercise: @exercise, user: current_user) == [] ? false : true
   end
 
   def edit
