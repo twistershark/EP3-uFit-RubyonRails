@@ -40,11 +40,7 @@
             <a class="nav-link" href="#">Plano Pessoal</a>
           </li>
           <% end %>
-	  <% if user_signed_in? %>
-	  <li class = "nav-item">
-		<a class = "nav-link" href = "/admin" >Administração</a>
-	  </li>
-          <% end %>
+
           <li class="navbar-text float-right nav-link">
           <% if user_signed_in? %>
             <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
