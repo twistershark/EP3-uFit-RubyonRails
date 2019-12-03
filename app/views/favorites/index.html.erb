@@ -1,0 +1,5 @@
+<% current_user.favorites.each do |favorite| %>
+<h1>Seus exercícios favoritos:</h1>
+<%= link_to favorite.exercise.name, favorite.exercise %>
+
+<% end %>

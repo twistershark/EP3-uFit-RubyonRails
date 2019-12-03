@@ -1,4 +1,4 @@
 class Favorite < ApplicationRecord
-  belongs_to :exercicios
+  belongs_to :exercises
   belongs_to :user
 end

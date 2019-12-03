@@ -1,8 +1,8 @@
 class FavoritesController < ApplicationController
   def update
-  	Favorite = Favorite.where(exercicio: Exercicio.find(params[:exercicio]), user: current_user)
+  	favorite = Favorite.where(exercise: Exercise.find(params[:exercise]), user: current_user)
   	if Favorite == []
-  		Favorite.create(exercicio: Exercicio.find(params[:exercicio]), user: current_user)
+  		Favorite.create(exercise: Exercise.find(params[:exercise]), user: current_user)
   		@favorite_exists = true
   	else
   		favorite.destroy_all
