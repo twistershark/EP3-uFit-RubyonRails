@@ -16,8 +16,14 @@
           </div>
         </div>
       </div>
+<div class="text-center">
+      <br><br><br><br>
+      <h1>Lista de todos os exercícios</h1>
+      <br><br>
+       <% @exercises.each do |exercise| %>
+        <h5>Nome: <%= link_to exercise.name, exercise, :name => exercise.name %></h5>
+        <h5>Categoria: <%= exercise.category %></h5>
+        <br><br>
+       <% end %>
 
-
-
-<p></p>
-
+    </div>

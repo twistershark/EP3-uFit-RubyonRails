@@ -1,14 +1,15 @@
+<div class ="container">
+  <br><br>
+  <h1><%= @exercise.name %></h1>
+  <p>
+    <strong>Categoria:</strong>
+    <%= @exercise.category %>
+  </p>
 
-<p>
-  <strong>Nome do Exercício:</strong>
-  <%= @exercise.name %>
-</p>
- 
-<p>
-  <strong>Categoria:</strong>
-  <%= @exercise.category %>
-</p>
+  <p class="text-center">
+  <br><br>
+  <iframe width="850" height="504" src='https://www.youtube.com/embed/<%= @exercise.url %>?
+    rel=0&autoplay=<%= params[:autoplay] || 0 %>' frameborder='0' allowfullscreen></iframe>
+  </p>
 
-<p>
-  <iframe width="560" height="315" src= "<%= #{@exercise.url} %>" frameborder="0" allowfullscreen></iframe>
-</p>
+</div>
