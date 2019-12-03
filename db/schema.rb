@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_03_043547) do
+ActiveRecord::Schema.define(version: 2019_12_03_150916) do
+
+  create_table "exercicios", force: :cascade do |t|
+    t.string "name"
+    t.string "url"
+    t.string "categoria"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "exercises", force: :cascade do |t|
     t.string "name"
@@ -21,11 +29,11 @@ ActiveRecord::Schema.define(version: 2019_12_03_043547) do
   end
 
   create_table "favorites", force: :cascade do |t|
-    t.integer "exercise_id"
-    t.integer "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["exercise_id"], name: "index_favorites_on_exercise_id"
+    t.integer "exercicios_id", null: false
+    t.integer "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["exercicios_id"], name: "index_favorites_on_exercicios_id"
     t.index ["user_id"], name: "index_favorites_on_user_id"
   end
 
@@ -42,6 +50,6 @@ ActiveRecord::Schema.define(version: 2019_12_03_043547) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "favorites", "exercises"
+  add_foreign_key "favorites", "exercicios", column: "exercicios_id"
   add_foreign_key "favorites", "users"
 end

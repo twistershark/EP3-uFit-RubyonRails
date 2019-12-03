@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @exercicio.name %>
+</p>
+
+<%= link_to favorite_text, favorites_update_path(exercicio: @exercicio), id:"favorite_link" , remote: true %>
+
+<p>
+  <strong>Url:</strong>
+  <%= @exercicio.url %>
+</p>
+
+<p>
+  <strong>Categoria:</strong>
+  <%= @exercicio.categoria %>
+</p>
+
+<%= link_to 'Edit', edit_exercicio_path(@exercicio) %> |
+<%= link_to 'Back', exercicios_path %>
