@@ -1,24 +1,17 @@
-# README
+<h2>uFit - EP3</h2> 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<strong>Alunos:</strong> Paulo Victor da Silva / 180129058
+	Marcelo Aiache Postiglione / 180126652
 
-Things you may want to cover:
+<p>uFit foi desenvolvido com o objetivo de ajudar pessoas a se exercitarem sem precisar ir para a academia. Para isso, implementamos um sistema de vídeos do Youtube que demonstram e ensinam a realizar os exercícios.</p>
 
-* Ruby version
+<strong>Painel de administração da aplicação:</strong>
+	<strong>URL:</strong> localhost:3000/admin
+	<strong>Login:</strong> admin@ufit.com
+	<strong>Password:</strong> 123456
 
-* System dependencies
+<strong>ATENÇÃO:</strong> Para adicionar um novo exercício, deve ser colocado no campo URL do novo vídeo apenas o código que vem depois de *www.youtube.com/watch?v=*.
 
-* Configuration
+Categorias já existentes: Braço, Perna, Abdômen e Aeróbico *(Utilizar alguma dessas categorias ao criar novo vídeo)*
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Não foi finalizado a implementação de favoritar vídeos e criar um plano pessoal com base nesses vídeos.
